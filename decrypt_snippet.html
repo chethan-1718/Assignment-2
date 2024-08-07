@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decrypt Snippet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enter Secret Key to Decrypt:</h1>
+        <form method="post">
+            <label for="key">Secret Key:</label><br>
+            <input type="text" id="key" name="key" required><br><br>
+            <button type="submit">Decrypt</button>
+        </form>
+        <div class="decrypted-text">
+            <!-- This section will be populated by Flask with the decrypted text -->
+            <pre>{{ decrypted_text }}</pre>
+        </div>
+    </div>
+</body>
+</html>
